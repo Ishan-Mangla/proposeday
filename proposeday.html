@@ -110,19 +110,6 @@
             backdrop-filter: blur(10px);
         }
 
-        .welcome-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 80%, rgba(255, 182, 193, 0.3) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(255, 105, 180, 0.3) 0%, transparent 50%);
-            z-index: 0;
-        }
-
         .main-title {
             font-size: 56px;
             color: #ff1493;
@@ -903,151 +890,151 @@
             margin-top: 20px;
             font-weight: bold;
         }
-        /* Add this CSS to your existing style section */
 
-/* Hug & Kisses Section Styles */
-.hug-kisses-section {
-    margin-top: 60px;
-    padding: 50px;
-    background: linear-gradient(135deg, #ffe6f2, #ffccff);
-    border-radius: 30px;
-    border: 4px solid #ff85b3;
-    text-align: center;
-    display: none;
-    animation: gentleFadeIn 1.2s ease forwards;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 
-        0 25px 60px rgba(255, 107, 157, 0.4),
-        0 0 0 2px white,
-        0 0 0 4px #ffb6c1;
-}
+        /* Hug & Kisses Section Styles - SIMPLIFIED */
+        .hug-kisses-section {
+            margin-top: 60px;
+            padding: 50px;
+            background: linear-gradient(135deg, #ffe6f2, #ffccff);
+            border-radius: 30px;
+            border: 4px solid #ff85b3;
+            text-align: center;
+            display: none;
+            animation: gentleFadeIn 1.2s ease forwards;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 
+                0 25px 60px rgba(255, 107, 157, 0.4),
+                0 0 0 2px white,
+                0 0 0 4px #ffb6c1;
+        }
 
-.hug-title {
-    font-size: 42px;
-    color: #ff1493;
-    margin-bottom: 40px;
-    text-shadow: 
-        2px 2px 0 rgba(255, 182, 193, 0.5),
-        3px 3px 15px rgba(0, 0, 0, 0.1);
-    font-weight: bold;
-}
+        .hug-title {
+            font-size: 42px;
+            color: #ff1493;
+            margin-bottom: 40px;
+            text-shadow: 
+                2px 2px 0 rgba(255, 182, 193, 0.5),
+                3px 3px 15px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+        }
 
-.dance-options {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin: 40px 0;
-}
+        .dance-options {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
 
-.dance-btn {
-    background: linear-gradient(135deg, #ff6b9d, #ff1493);
-    color: white;
-    border: none;
-    padding: 20px 35px;
-    font-size: 24px;
-    border-radius: 60px;
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-    font-family: 'Georgia', serif;
-    font-weight: bold;
-    box-shadow: 
-        0 12px 30px rgba(255, 107, 157, 0.5),
-        0 0 0 2px white,
-        0 0 0 4px #ffb6c1;
-    min-width: 250px;
-    position: relative;
-    overflow: hidden;
-}
+        .dance-btn {
+            background: linear-gradient(135deg, #ff6b9d, #ff1493);
+            color: white;
+            border: none;
+            padding: 20px 35px;
+            font-size: 24px;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            box-shadow: 
+                0 12px 30px rgba(255, 107, 157, 0.5),
+                0 0 0 2px white,
+                0 0 0 4px #ffb6c1;
+            min-width: 250px;
+            position: relative;
+            overflow: hidden;
+        }
 
-.dance-btn:hover {
-    transform: translateY(-8px) scale(1.05);
-    box-shadow: 
-        0 18px 40px rgba(255, 107, 157, 0.7),
-        0 0 0 2px white,
-        0 0 0 4px #ffb6c1;
-}
+        .dance-btn:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 
+                0 18px 40px rgba(255, 107, 157, 0.7),
+                0 0 0 2px white,
+                0 0 0 4px #ffb6c1;
+        }
 
-.dance-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-    transition: left 0.5s;
-}
+        .dance-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.5s;
+        }
 
-.dance-btn:hover::before {
-    left: 100%;
-}
+        .dance-btn:hover::before {
+            left: 100%;
+        }
 
-.gif-container {
-    margin: 40px auto;
-    width: 90%;
-    max-width: 500px;
-    height: 400px;
-    border-radius: 25px;
-    overflow: hidden;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 240, 245, 0.9));
-    border: 3px solid #ffb6c1;
-    box-shadow: 
-        0 20px 50px rgba(255, 182, 193, 0.4),
-        inset 0 0 30px rgba(255, 255, 255, 0.8);
-    display: none;
-    position: relative;
-}
+        /* SIMPLE GIF STYLES - LIKE YOUR SAMPLE CODE */
+        .gif-display {
+            display: none;
+            position: fixed;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            height: auto;
+            z-index: 1000;
+            animation: hugBounce 1.2s ease-in-out;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
 
-.gif-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 22px;
-    animation: gifReveal 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
-}
+        @keyframes hugBounce {
+            0%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(-20px);
+            }
+        }
 
-@keyframes gifReveal {
-    0% { 
-        transform: scale(0) rotate(-20deg); 
-        opacity: 0; 
-    }
-    100% { 
-        transform: scale(1) rotate(0deg); 
-        opacity: 1; 
-    }
-}
+        .love-message {
+            font-size: 28px;
+            color: #ff1493;
+            margin-top: 30px;
+            padding: 25px 40px;
+            background: linear-gradient(135deg, rgba(255, 248, 248, 0.95), rgba(255, 240, 245, 0.95));
+            border-radius: 25px;
+            border: 3px dashed #ffb6c1;
+            animation: messagePop 1s ease-out 0.5s forwards;
+            opacity: 0;
+            transform: translateY(20px);
+            font-weight: bold;
+            font-style: italic;
+        }
 
-.love-message {
-    font-size: 28px;
-    color: #ff1493;
-    margin-top: 30px;
-    padding: 25px 40px;
-    background: linear-gradient(135deg, rgba(255, 248, 248, 0.95), rgba(255, 240, 245, 0.95));
-    border-radius: 25px;
-    border: 3px dashed #ffb6c1;
-    animation: messagePop 1s ease-out 0.5s forwards;
-    opacity: 0;
-    transform: translateY(20px);
-    font-weight: bold;
-    font-style: italic;
-}
+        /* Song notification styles */
+        .song-notification {
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 20, 147, 0.9);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 18px;
+            z-index: 10000;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            animation: fadeInOut 3s ease-in-out;
+            backdrop-filter: blur(10px);
+            border: 2px solid white;
+            text-align: center;
+            display: none;
+        }
 
-.gif-caption {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    background: rgba(255, 20, 147, 0.85);
-    color: white;
-    padding: 15px;
-    font-size: 24px;
-    font-weight: bold;
-    backdrop-filter: blur(10px);
-    border-radius: 0 0 22px 22px;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
+        @keyframes fadeInOut {
+            0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+            15% { opacity: 1; transform: translateX(-50%) translateY(0); }
+            85% { opacity: 1; transform: translateX(-50%) translateY(0); }
+            100% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+        }
     </style>
 </head>
 <body>
@@ -1297,24 +1284,20 @@
         </div>
     </div>
     <!-- Add this after the sunflower celebration closing div -->
-<!-- Hug & Kisses Dance Section -->
+<!-- SIMPLE Hug & Kisses Dance Section - LIKE YOUR SAMPLE CODE -->
 <div class="hug-kisses-section" id="hugKissesSection">
     <h2 class="hug-title">Celebrate Our Love! 💖🕺💃</h2>
     
     <div class="dance-options">
-        <button class="dance-btn" data-gif="hug" onclick="showDanceGif('hug')">
+        <button class="dance-btn" onclick="showGif('hug')">
             🤗 Give Me a Hug!
         </button>
-        <button class="dance-btn" data-gif="kiss" onclick="showDanceGif('kiss')">
+        <button class="dance-btn" onclick="showGif('kiss')">
             😘 Send Kisses!
         </button>
-        <button class="dance-btn" data-gif="dance" onclick="showDanceGif('dance')">
+        <button class="dance-btn" onclick="showGif('dance')">
             💃 Let's Dance!
         </button>
-    </div>
-    
-    <div class="gif-container" id="gifContainer">
-        <!-- GIFs will appear here -->
     </div>
     
     <div class="love-message" id="loveMessage">
@@ -1323,13 +1306,39 @@
     </div>
 </div>
 
+<!-- Song Notification -->
+<div class="song-notification" id="songNotification"></div>
+
+
+
    <script>
+    // ============================================
+    // SIMPLE CONFIGURATION - LIKE YOUR SAMPLE CODE
+    // ============================================
+    
+    // Your GIF files
+    const GIFS = {
+        hug: 'peach-and-goma.gif',
+        kiss: 'peach-and-goma-498-x-498-gif-d90zz52q5jrd.gif',
+        dance: 'peach-cat-dancing.gif'
+    };
+    
+    // GIF Messages
+    const GIF_MESSAGES = {
+        hug: '🤗 Just like Peach and Goma, I want to hug you forever! 💖',
+        kiss: '😘 Sending you a thousand kisses that travel through time and space! 💋',
+        dance: '💃 My heart dances like this cute cat whenever I think of you! 🐱✨'
+    };
+
+    // ============================================
+    // END OF CONFIGURATION
+    // ============================================
+
     // Global variables
     let currentPage = 1;
     let answeredQuestions = 0;
-    let totalQuestions = 6; // Changed to 6 since you have 6 questions now
+    let totalQuestions = 6;
     let userName = '';
-    let romanticMusic = null;
     let isMusicPlaying = true;
     let nameAttempts = 0;
     let nameCheckTimer = null;
@@ -1359,25 +1368,11 @@
     const sparkleContainer = document.getElementById('sparkleContainer');
     const finalOptions = document.getElementById('finalOptions');
     const hugKissesSection = document.getElementById('hugKissesSection');
+    const loveMessage = document.getElementById('loveMessage');
 
-    // GIF Configuration - Add your own GIF URLs here
-    const gifConfig = {
-        hug: {
-            url: 'https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif',
-            caption: '🤗 A Warm Hug for My Love! 💖',
-            message: 'Wrapping you in the warmest hug that lasts forever...'
-        },
-        kiss: {
-            url: 'https://media.giphy.com/media/l0HU7JIWp2l3kR3O8/giphy.gif',
-            caption: '😘 Flying Kisses Just for You! 💋',
-            message: 'Sending you a thousand kisses that travel through time and space...'
-        },
-        dance: {
-            url: 'https://media.giphy.com/media/l0HlGdXjh6B6fF5u8/giphy.gif',
-            caption: '💃🕺 Dancing Through Life Together! ✨',
-            message: 'Let\'s dance through every moment of our beautiful journey...'
-        }
-    };
+    // Audio element
+    const backgroundMusic = document.getElementById('backgroundMusic');
+    const musicIcon = document.getElementById('musicIcon');
 
     // Unwanted names list
     const unwantedNames = ['khushi', 'vanshika', 'vrinda', 'jhalak'];
@@ -1387,6 +1382,94 @@
         "Parasite! Trying to steal Varsha's moment? 😡🚫",
         "Chudail hai sab! Only Varsha is my queen! 👑💖"
     ];
+
+    // ============================================
+    // SIMPLE MUSIC FUNCTION - EXACTLY LIKE YOUR SAMPLE CODE
+    // ============================================
+    function toggleMusic() {
+        if (isMusicPlaying) {
+            backgroundMusic.pause();
+            musicIcon.innerText = '🔇';
+            isMusicPlaying = false;
+        } else {
+            backgroundMusic.play();
+            musicIcon.innerText = '🎵';
+            isMusicPlaying = true;
+        }
+    }
+
+    // Initialize music
+    function initializeMusic() {
+        backgroundMusic.volume = 0.4; // Set volume to 40%
+        backgroundMusic.play().catch(e => {
+            console.log("Auto-play prevented, user needs to interact first");
+            musicIcon.innerText = '🔇';
+            isMusicPlaying = false;
+        });
+    }
+
+    // ============================================
+    // SIMPLE GIF FUNCTION - EXACTLY LIKE YOUR SAMPLE CODE
+    // ============================================
+    function showGif(type) {
+        // Remove any existing GIF
+        const existingGif = document.querySelector('.gif-display');
+        if (existingGif) {
+            existingGif.remove();
+        }
+        
+        // Create GIF element - EXACTLY LIKE YOUR CODE
+        const gif = document.createElement('img');
+        gif.className = 'gif-display';
+        gif.src = GIFS[type];
+        gif.alt = type + ' GIF';
+        gif.style.display = 'block'; // Make it visible
+        
+        // Add to page
+        document.body.appendChild(gif);
+        
+        // Update message
+        loveMessage.textContent = GIF_MESSAGES[type];
+        loveMessage.style.opacity = '1';
+        loveMessage.style.transform = 'translateY(0)';
+        
+        // Play happy sound effect
+        playSoundEffect('happy');
+        
+        // Create floating hearts
+        createFloatingHeartsAroundGif();
+        
+        // Remove GIF after 3.5 seconds - EXACTLY LIKE YOUR CODE
+        setTimeout(() => {
+            gif.style.opacity = '0';
+            gif.style.transform = 'translateX(-50%) translateY(20px)';
+            setTimeout(() => {
+                if (gif.parentNode) {
+                    gif.remove();
+                }
+            }, 300);
+        }, 3500);
+    }
+
+    function createFloatingHeartsAroundGif() {
+        // Create floating hearts around the GIF
+        for (let i = 0; i < 10; i++) {
+            setTimeout(() => {
+                const heart = document.createElement('div');
+                heart.innerHTML = '💖';
+                heart.style.position = 'fixed';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.top = '80vh';
+                heart.style.fontSize = (Math.random() * 30 + 20) + 'px';
+                heart.style.zIndex = '9999';
+                heart.style.animation = `heartFall ${Math.random() * 2 + 1}s linear forwards`;
+                heart.style.opacity = '0.8';
+                document.body.appendChild(heart);
+                
+                setTimeout(() => heart.remove(), 3000);
+            }, i * 200);
+        }
+    }
 
     // Create floating hearts and sparkles
     function createFloatingElements() {
@@ -1418,47 +1501,49 @@
         }
     }
 
-    // Audio control
-    function initializeAudio() {
-        romanticMusic = new Audio('https://assets.mixkit.co/music/preview/mixkit-romantic-sunset-687.mp3');
-        romanticMusic.volume = 0.4;
-        romanticMusic.loop = true;
-        romanticMusic.play().catch(e => console.log("Audio play failed:", e));
-    }
-
-    audioControl.addEventListener('click', function() {
-        if (isMusicPlaying) {
-            romanticMusic.pause();
-            audioControl.innerHTML = '🔇';
-            audioControl.style.transform = 'scale(1.1) rotate(-15deg)';
-            isMusicPlaying = false;
-        } else {
-            romanticMusic.play();
-            audioControl.innerHTML = '🎵';
-            audioControl.style.transform = 'scale(1.1) rotate(15deg)';
-            isMusicPlaying = true;
+    // Simple sound effects
+    function playSoundEffect(type) {
+        try {
+            const context = new (window.AudioContext || window.webkitAudioContext)();
+            const oscillator = context.createOscillator();
+            const gainNode = context.createGain();
+            
+            oscillator.connect(gainNode);
+            gainNode.connect(context.destination);
+            
+            if (type === 'happy' || type === 'correct') {
+                oscillator.frequency.setValueAtTime(523.25, context.currentTime); // C5
+            } else if (type === 'angry' || type === 'wrong') {
+                oscillator.frequency.setValueAtTime(200, context.currentTime);
+            } else if (type === 'celebration') {
+                oscillator.frequency.setValueAtTime(659.25, context.currentTime); // E5
+            } else {
+                oscillator.frequency.setValueAtTime(440, context.currentTime); // A4
+            }
+            
+            gainNode.gain.setValueAtTime(0.1, context.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, context.currentTime + 0.3);
+            
+            oscillator.start(context.currentTime);
+            oscillator.stop(context.currentTime + 0.3);
+        } catch (e) {
+            console.log("Sound effect error");
         }
-        setTimeout(() => audioControl.style.transform = '', 300);
-    });
+    }
 
     // Show angry message for unwanted names
     function showAngryMessage(name) {
         nameAttempts++;
         
-        // Select random angry message
         const messageIndex = Math.floor(Math.random() * unwantedMessages.length);
         angryText.innerHTML = unwantedMessages[messageIndex];
-        
-        // Show angry message
         angryMessage.style.display = 'block';
+        
+        playSoundEffect('angry');
         
         // Create angry effects
         createAngryEffects();
         
-        // Play angry sound
-        playSound('https://assets.mixkit.co/sfx/preview/mixkit-angry-monster-roar-7.mp3');
-        
-        // Clear input with effect
         nameInput.style.animation = 'angryShake 0.5s ease-in-out';
         setTimeout(() => {
             nameInput.style.animation = '';
@@ -1466,14 +1551,12 @@
             nameInput.focus();
         }, 500);
         
-        // Hide message after 5 seconds
         setTimeout(() => {
             angryMessage.style.display = 'none';
         }, 5000);
     }
 
     function createAngryEffects() {
-        // Create angry emojis
         for (let i = 0; i < 20; i++) {
             setTimeout(() => {
                 const emoji = document.createElement('div');
@@ -1491,7 +1574,7 @@
         }
     }
 
-    // Name verification with increased security
+    // Name verification
     startBtn.addEventListener('click', function() {
         userName = nameInput.value.trim().toLowerCase();
         
@@ -1501,27 +1584,22 @@
             return;
         }
         
-        // Check if it's an unwanted name
         if (unwantedNames.includes(userName)) {
             showAngryMessage(userName);
             return;
         }
         
         if (userName === 'varsha') {
-            // Hide loading screen
             loadingScreen.style.opacity = '0';
             setTimeout(() => {
                 loadingScreen.style.display = 'none';
                 document.getElementById('page1').classList.add('active');
             }, 1000);
             
-            // Update progress
             progressBar.style.width = '20%';
             
-            // Play magical sound
-            playSound('https://assets.mixkit.co/sfx/preview/mixkit-magic-sparkles-300.mp3');
+            playSoundEffect('happy');
             
-            // Update messages with her name
             const formattedName = userName.charAt(0).toUpperCase() + userName.slice(1);
             animationText.innerHTML = `Every Heartbeat Speaks ${formattedName}'s Name... 💓`;
             finalQuestion.innerHTML = `
@@ -1534,17 +1612,14 @@
                 </span>
             `;
             
-            // Create magical entrance effect
             createMagicalEntrance();
-            
-            // Show love animation after delay
             setTimeout(() => showLoveAnimation(), 2000);
             
         } else {
             showMessage(errorMessage, 'This journey is woven only for Varsha\'s heart... 💖');
             nameInput.value = '';
             nameInput.focus();
-            playSound('https://assets.mixkit.co/sfx/preview/mixkit-wrong-answer-fail-notification-946.mp3');
+            playSoundEffect('wrong');
             nameInput.style.animation = 'none';
             setTimeout(() => nameInput.style.animation = 'messagePop 0.6s', 10);
         }
@@ -1554,10 +1629,8 @@
     nameInput.addEventListener('input', function() {
         const inputValue = this.value.trim().toLowerCase();
         
-        // Clear previous timer
         if (nameCheckTimer) clearTimeout(nameCheckTimer);
         
-        // Set new timer for name check
         nameCheckTimer = setTimeout(() => {
             if (inputValue && unwantedNames.includes(inputValue)) {
                 showAngryMessage(inputValue);
@@ -1565,7 +1638,6 @@
         }, 1000);
     });
 
-    // Create magical entrance effect
     function createMagicalEntrance() {
         for (let i = 0; i < 20; i++) {
             setTimeout(() => {
@@ -1580,18 +1652,15 @@
         }
     }
 
-    // Show love animation
     function showLoveAnimation() {
         loveAnimation.style.display = 'flex';
         createInteractiveLoveAnimation();
         
-        // Set longer delay before allowing close
         setTimeout(() => {
             closeAnimation.style.display = 'flex';
-        }, 5000); // 5 seconds delay
+        }, 5000);
     }
 
-    // Create interactive love animation
     function createInteractiveLoveAnimation() {
         animationCanvas.innerHTML = '';
         
@@ -1611,7 +1680,6 @@
             "ALWAYS & FOREVER", "MADE FOR EACH OTHER", "MY DESTINY"
         ];
         
-        // Create hearts
         for (let i = 0; i < 35; i++) {
             hearts.push({
                 x: Math.random() * canvas.width,
@@ -1626,11 +1694,9 @@
             });
         }
         
-        // Animation loop
         function animate() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             
-            // Draw glow effect
             ctx.fillStyle = 'rgba(255, 20, 147, 0.05)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             
@@ -1648,7 +1714,6 @@
                 const pulseScale = 1 + Math.sin(heart.pulse) * 0.3;
                 ctx.scale(pulseScale, pulseScale);
                 
-                // Draw heart with glow
                 ctx.shadowColor = heart.color;
                 ctx.shadowBlur = 20 * heart.glow;
                 ctx.fillStyle = heart.color;
@@ -1659,7 +1724,6 @@
                 ctx.bezierCurveTo(size*2, 0, size, -size*2, 0, 0);
                 ctx.fill();
                 
-                // Draw text
                 ctx.shadowColor = 'white';
                 ctx.shadowBlur = 10;
                 ctx.fillStyle = 'white';
@@ -1670,7 +1734,6 @@
                 ctx.restore();
             });
             
-            // Draw big pulsing heart
             const centerX = canvas.width / 2;
             const centerY = canvas.height / 2;
             const time = Date.now() * 0.001;
@@ -1692,7 +1755,6 @@
             }
             ctx.fill();
             
-            // Draw name in center
             ctx.shadowColor = 'white';
             ctx.shadowBlur = 20;
             ctx.fillStyle = 'white';
@@ -1708,9 +1770,7 @@
         animate();
     }
 
-    // Close animation and proceed
     closeAnimation.addEventListener('click', function() {
-        // Create exit effect
         createMagicalExit();
         
         setTimeout(() => {
@@ -1758,11 +1818,8 @@
                     showMessage(questionMessage, messages[answeredQuestions - 1]);
                 }
                 
-                playSound('https://assets.mixkit.co/sfx/preview/mixkit-correct-answer-tone-2870.mp3');
-                
-                // Create heart effect
+                playSoundEffect('correct');
                 createHeartEffect(this);
-                
             }
         });
     });
@@ -1791,14 +1848,12 @@
 
     document.querySelectorAll('.no-option').forEach(btn => {
         btn.addEventListener('click', function() {
-            playSound('https://assets.mixkit.co/sfx/preview/mixkit-wrong-answer-fail-notification-946.mp3');
+            playSoundEffect('wrong');
             
-            // Move button randomly
             const randomX = Math.random() * 150 - 75;
             const randomY = Math.random() * 150 - 75;
             this.style.transform = `translate(${randomX}px, ${randomY}px)`;
             
-            // Show message
             const message = document.createElement('div');
             message.textContent = "Listen to your heart instead... 💖";
             message.style.position = 'absolute';
@@ -1815,9 +1870,7 @@
         });
     });
 
-    // Proceed to final page
     proceedBtn.addEventListener('click', function() {
-        // Create transition effect
         createTransitionEffect();
         
         setTimeout(() => {
@@ -1825,8 +1878,6 @@
             progressBar.style.width = '70%';
             questionProgress.style.width = '100%';
             nextBtn.style.display = 'none';
-            
-            // Start moving "no" button
             startMovingNoButton();
         }, 1000);
     });
@@ -1847,12 +1898,10 @@
         }
     }
 
-    // FIXED: Show tease message when trying to click "Let me think" button
     finalNoBtn.addEventListener('click', function(e) {
         e.preventDefault();
         showTeaseMessage();
         
-        // Move button away
         const rect = finalOptions.getBoundingClientRect();
         const newX = Math.random() * (rect.width - this.offsetWidth);
         const newY = Math.random() * (rect.height - this.offsetHeight);
@@ -1860,12 +1909,10 @@
         this.style.left = newX + 'px';
         this.style.top = newY + 'px';
         
-        // Play sound
-        playSound('https://assets.mixkit.co/sfx/preview/mixkit-wrong-answer-fail-notification-946.mp3');
+        playSoundEffect('wrong');
     });
 
     function showTeaseMessage() {
-        // Remove existing message if any
         const existingMsg = document.querySelector('.tease-message');
         if (existingMsg) existingMsg.remove();
         
@@ -1875,7 +1922,6 @@
         
         document.body.appendChild(msg);
         
-        // Remove message after 2 seconds
         setTimeout(() => {
             msg.style.opacity = '0';
             msg.style.transform = 'translateX(-50%) scale(0.8)';
@@ -1883,37 +1929,26 @@
         }, 2000);
     }
 
-    // Final yes button - UPDATED TO INCLUDE HUG & KISSES SECTION
     finalYesBtn.addEventListener('click', function() {
         progressBar.style.width = '100%';
         
-        // Play magical celebration sound
-        playSound('https://assets.mixkit.co/sfx/preview/mixkit-wedding-bells-578.mp3');
+        playSoundEffect('celebration');
         
-        // Hide no button with effect
         finalNoBtn.style.animation = 'messagePop 0.6s reverse forwards';
         setTimeout(() => finalNoBtn.style.display = 'none', 600);
         
-        // Show sunflower celebration
         setTimeout(() => {
             sunflowerCelebration.style.display = 'block';
-            // Create sunflower garden
             createSunflowerGarden();
-            
-            // Show hug & kisses section
             showHugKissesSection();
-            
-            // Create massive celebration
             createCelebrationStorm();
             
-            // Scroll to celebration
             setTimeout(() => {
                 sunflowerCelebration.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }, 1500);
         }, 1000);
     });
 
-    // Create sunflower garden
     function createSunflowerGarden() {
         sunflowerGarden.innerHTML = '';
         for (let i = 0; i < 15; i++) {
@@ -1926,15 +1961,12 @@
                 sunflower.style.opacity = '0';
                 sunflowerGarden.appendChild(sunflower);
                 
-                // Fade in
                 setTimeout(() => sunflower.style.opacity = '1', 100);
             }, i * 200);
         }
     }
 
-    // Create celebration storm
     function createCelebrationStorm() {
-        // Hearts
         for (let i = 0; i < 150; i++) {
             setTimeout(() => {
                 const confetti = document.createElement('div');
@@ -1948,7 +1980,6 @@
             }, i * 30);
         }
         
-        // Sunflowers
         for (let i = 0; i < 50; i++) {
             setTimeout(() => {
                 const confetti = document.createElement('div');
@@ -1963,12 +1994,9 @@
         }
     }
 
-    // Create magical storm
     window.createMagicalStorm = function() {
-        // Change background to golden
         document.body.style.background = 'linear-gradient(135deg, #fff8e1, #ffecb3, #ffcc80)';
         
-        // Create extra celebration
         for (let i = 0; i < 200; i++) {
             setTimeout(() => {
                 const element = document.createElement('div');
@@ -1987,26 +2015,22 @@
             }, i * 40);
         }
         
-        playSound('https://assets.mixkit.co/sfx/preview/mixkit-happy-crowd-laugh-464.mp3');
+        playSoundEffect('celebration');
         
-        // Add sparkles
         for (let i = 0; i < 50; i++) {
             setTimeout(createSparkles, i * 100);
         }
     };
 
-    // Move no button
     function startMovingNoButton() {
         const rect = finalOptions.getBoundingClientRect();
         let posX = rect.width / 2;
         let posY = rect.height / 2;
         
-        // Set initial position
         finalNoBtn.style.position = 'absolute';
         finalNoBtn.style.left = posX + 'px';
         finalNoBtn.style.top = posY + 'px';
         
-        // Make button move on mouse move
         finalOptions.addEventListener('mousemove', (e) => {
             const mouseX = e.clientX - rect.left;
             const mouseY = e.clientY - rect.top;
@@ -2021,21 +2045,18 @@
             );
             
             if (distance < 120) {
-                // Move button away from cursor
                 const angle = Math.atan2(mouseY - btnCenterY, mouseX - btnCenterX);
                 const moveDistance = 150;
                 
                 let newX = btnCenterX - Math.cos(angle) * moveDistance;
                 let newY = btnCenterY - Math.sin(angle) * moveDistance;
                 
-                // Keep within bounds
                 newX = Math.max(30, Math.min(newX, rect.width - finalNoBtn.offsetWidth - 30));
                 newY = Math.max(30, Math.min(newY, rect.height - finalNoBtn.offsetHeight - 30));
                 
                 finalNoBtn.style.left = newX + 'px';
                 finalNoBtn.style.top = newY + 'px';
                 
-                // Show tease message occasionally
                 if (Math.random() < 0.3) {
                     showTeaseMessage();
                 }
@@ -2043,7 +2064,6 @@
         });
     }
 
-    // Navigation
     nextBtn.addEventListener('click', function() {
         if (currentPage < 3) {
             createPageTransition();
@@ -2081,19 +2101,16 @@
         document.getElementById(`page${pageNumber}`).classList.add('active');
         currentPage = pageNumber;
         
-        // Update progress bar
         const progress = (pageNumber - 1) * 33;
         progressBar.style.width = `${progress}%`;
     }
 
-    // Show the hug & kisses section after sunflower celebration appears
     function showHugKissesSection() {
         setTimeout(() => {
             if (hugKissesSection) {
                 hugKissesSection.style.display = 'block';
                 hugKissesSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 
-                // Create sparkles around the section
                 for (let i = 0; i < 20; i++) {
                     setTimeout(() => {
                         const sparkle = document.createElement('div');
@@ -2109,82 +2126,6 @@
         }, 2000);
     }
 
-    // Function to show dance GIF
-    window.showDanceGif = function(type) {
-        const gifContainer = document.getElementById('gifContainer');
-        const loveMessage = document.getElementById('loveMessage');
-        
-        if (!gifContainer || !loveMessage || !gifConfig[type]) return;
-        
-        // Clear previous content
-        gifContainer.innerHTML = '';
-        gifContainer.style.display = 'block';
-        
-        // Create GIF element
-        const gifElement = document.createElement('img');
-        gifElement.className = 'gif-image';
-        gifElement.src = gifConfig[type].url;
-        gifElement.alt = gifConfig[type].caption;
-        
-        // Create caption
-        const caption = document.createElement('div');
-        caption.className = 'gif-caption';
-        caption.textContent = gifConfig[type].caption;
-        
-        gifContainer.appendChild(gifElement);
-        gifContainer.appendChild(caption);
-        
-        // Update message
-        loveMessage.textContent = gifConfig[type].message;
-        loveMessage.style.opacity = '1';
-        loveMessage.style.transform = 'translateY(0)';
-        
-        // Play sound based on type
-        playDanceSound(type);
-        
-        // Create floating hearts around the GIF
-        createGifCelebration(type);
-    }
-
-    // Function to play appropriate sound for each GIF
-    function playDanceSound(type) {
-        const sounds = {
-            hug: 'https://assets.mixkit.co/sfx/preview/mixkit-happy-crowd-laugh-464.mp3',
-            kiss: 'https://assets.mixkit.co/sfx/preview/mixkit-kissing-sound-2013.mp3',
-            dance: 'https://assets.mixkit.co/sfx/preview/mixkit-party-horn-sound-2927.mp3'
-        };
-        
-        if (sounds[type]) {
-            playSound(sounds[type]);
-        }
-    }
-
-    // Create celebration effects for GIF display
-    function createGifCelebration(type) {
-        const emojis = {
-            hug: ['🤗', '💖', '🤗', '💖'],
-            kiss: ['😘', '💋', '😘', '💋'],
-            dance: ['💃', '🕺', '✨', '🎉']
-        };
-        
-        for (let i = 0; i < 15; i++) {
-            setTimeout(() => {
-                const emoji = document.createElement('div');
-                emoji.innerHTML = emojis[type][i % emojis[type].length];
-                emoji.style.position = 'fixed';
-                emoji.style.left = Math.random() * 100 + 'vw';
-                emoji.style.top = '-50px';
-                emoji.style.fontSize = (Math.random() * 40 + 30) + 'px';
-                emoji.style.zIndex = '9999';
-                emoji.style.animation = `confettiRain ${Math.random() * 3 + 2}s linear forwards`;
-                document.body.appendChild(emoji);
-                
-                setTimeout(() => emoji.remove(), 5000);
-            }, i * 150);
-        }
-    }
-
-    // Helper functions
     function showMessage(element, text) {
         element.textContent = text;
         element.style.display = 'block';
@@ -2194,15 +2135,8 @@
         }, 3000);
     }
 
-    function playSound(url) {
-        const sound = new Audio(url);
-        sound.volume = 0.3;
-        sound.play().catch(e => console.log("Sound play error:", e));
-    }
-
     // Initialize everything
     window.addEventListener('load', function() {
-        // Hide loading screen after 3 seconds (for non-Varsha names)
         setTimeout(() => {
             loadingScreen.style.opacity = '0';
             setTimeout(() => {
@@ -2212,19 +2146,16 @@
         }, 3000);
         
         createFloatingElements();
-        initializeAudio();
+        initializeMusic(); // Initialize background music
         nameInput.focus();
         
-        // Console message
         console.log('%c💖 For Varsha: Every line of this code carries a piece of my heart. 💖', 
             'color: #ff1493; font-size: 18px; font-weight: bold;');
         
-        // Allow Enter key
         nameInput.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') startBtn.click();
         });
         
-        // Recreate sparkles periodically
         setInterval(() => {
             sparkleContainer.innerHTML = '';
             createSparkles();
